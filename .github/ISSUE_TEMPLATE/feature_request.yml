@@ -1,0 +1,14 @@
+name: Visual or hardware idea
+description: Propose a new visual, agent source, or verified keyboard port.
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should the keyboard communicate?
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware and transport
+      description: Include the exact model, layout, VID/PID, operating system, and USB or Bluetooth.

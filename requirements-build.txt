@@ -1,0 +1,4 @@
+hidapi>=0.14,<1
+pyobjc-framework-Cocoa>=11,<14
+py2app>=0.28,<1
+pytest>=8,<10

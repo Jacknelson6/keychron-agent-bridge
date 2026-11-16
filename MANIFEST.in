@@ -1,0 +1,8 @@
+include README.md LICENSE NOTICE CONTRIBUTING.md SECURITY.md CHANGELOG.md requirements-build.txt requirements.lock
+recursive-include docs *.md
+recursive-include assets *.png *.md
+recursive-include firmware *.md *.h *.c *.mk
+recursive-include scripts *.py *.sh
+recursive-include examples *.py
+recursive-include tests *.py *.c *.sh
+recursive-exclude * __pycache__ *.pyc

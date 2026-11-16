@@ -1,0 +1,24 @@
+Keychron Agent Bridge
+Copyright (C) 2026 Jack Nelson and contributors
+
+Original project code, documentation, and artwork are licensed under the GNU
+General Public License, version 2 or (at your option) any later version.
+SPDX-License-Identifier: GPL-2.0-or-later
+The full license is in LICENSE.
+
+The firmware extension is built against Keychron's QMK fork, pinned to revision
+666862cb8123b64a6b96718d739c6203ad99031f. QMK and Keychron code retain their
+original copyright and license notices. The upstream source is not vendored:
+https://github.com/Keychron/qmk_firmware
+
+The native wear-leveling reader links the upstream QMK wear-leveling and FNV
+implementations from the developer's checkout. Preserve their upstream notices
+when redistributing source or compiled firmware. This repository does not ship
+factory firmware, private keyboard settings, or firmware recovery dumps.
+
+Third-party Python dependencies retain their own licenses. They are installed
+from their package distributions, rather than vendored in this source release.
+
+Keychron, Claude, and Codex are names of their respective owners. This is an
+independent community project, not an official Keychron, Anthropic, or OpenAI
+product. The project artwork does not use their official logos.

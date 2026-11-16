@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keychron-agent-bridge"
+version = "0.1.0"
+description = "A local Mac keyboard companion for Claude Code and Codex"
+readme = "README.md"
+license = "GPL-2.0-or-later"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Jack Nelson"}]
+requires-python = ">=3.12"
+dependencies = ["hidapi>=0.14,<1", "pyobjc-framework-Cocoa>=11,<14"]
+classifiers = ["Development Status :: 3 - Alpha", "Operating System :: MacOS", "Programming Language :: Python :: 3"]
+
+[project.urls]
+Homepage = "https://github.com/Jacknelson6/keychron-agent-bridge"
+Issues = "https://github.com/Jacknelson6/keychron-agent-bridge/issues"
+Documentation = "https://github.com/Jacknelson6/keychron-agent-bridge/tree/main/docs"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+keychron-bridge = "keychron_bridge.cli:main"
+
+[tool.setuptools]
+packages = ["keychron_bridge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
